@@ -1,0 +1,230 @@
+@import url('https://fonts.cdnfonts.com/css/cobbler');
+
+:root {
+
+    --main-bg-color: #f1e7bb;
+    --title-color: #c4af8f;
+    --left-box-color: #B9945D;
+    --left-text-color: #e9cea5;
+    --right-box-color: #D3B07D;
+    --right-text-color: #a18152;
+}
+
+body {
+
+    background-color: var(--main-bg-color);
+    color: var(--title-color);
+    font-family: 'Cobbler', sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+h1 {
+    
+    padding: 60px;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: -40px;
+    font-size: 100px;
+}
+
+.hidden {
+
+    opacity: 0;
+    filter: blur(3px);
+    transition: all 1s;
+}
+
+.show {
+
+    opacity: 1;
+    filter: blur(0);
+}
+
+label {
+    display: block;
+}
+
+.container {
+
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 80px;
+    align-items: center;
+}
+
+.container .panel {
+
+    width: 900px;
+    height: 600px;
+    cursor: pointer;
+    position: relative;
+    color: #e9cea5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #8b7a5f;
+    border-radius: 63px;
+    transition: 0.5s;
+    background: var(--main-bg-color);
+    box-shadow:  5px 5px 27px #a19b7d,
+             -5px -5px 27px #fffff9;
+
+    transform: scale(0.7);
+}
+
+.container .panel:hover {
+    transform: scale(0.8);
+}
+
+.container .panel .icon {
+
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: var(--main-bg-color);
+    transition: 0.5s;
+    border-radius: 63px;
+    z-index: 1;
+    display: flex;
+}
+
+.container .panel:hover .icon {
+
+    top: 20px;
+    right: clac(50% - 40px);
+    width: 80px/2;
+    height: 240px;
+}
+
+.container .panel .text {
+
+    text-align: center;
+    padding-top: 240px;
+    margin: 40px;
+    font-size: 25px;
+    color: var(--right-text-color);
+}
+
+.container .pane {
+
+    width: 430px;
+    height: 430px;
+    cursor: pointer;
+    border: 10px solid #8b7a5f;
+    position: relative;
+    background-color: var(--title-color);
+    color: #e9cea5;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 100px;
+    transition: 0.5s;
+    border-radius: 50px;
+    box-shadow:  20px 20px 60px #a7957a,
+             -20px -20px 60px #e1c9a4;
+    transform: scale(0.7);
+}
+
+.container .pane:hover {
+    transform: scale(0.9);
+}
+
+.container .pane .title {
+
+    top: 0;
+    left: 0;
+    font-size: 70px;
+    background-color: var(--title-color);
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    border-radius: 63px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .pane:hover .title {
+
+    top: 20px;
+    right: clac(50% - 40px);
+    width: 80px/2;
+    height: 50%;
+}
+
+.container .pane .icon {
+
+    text-align: center;
+    margin-top: 0px;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+#tools {
+
+    font-size: 80px;
+}
+
+#programming {
+
+    font-size: 80px;
+}
+
+#more {
+
+    font-size: 30px;
+    letter-spacing: normal;
+}
+
+#code {
+
+
+    font-size: 50px;
+}
+
+#exp-panel {
+
+    background: var(--left-text-color);
+    margin-bottom: 300px;
+    width: 800px;
+}
+
+#exp-icon {
+
+    background-color: var(--left-text-color);
+    color: var(--title-color);
+    font-size: 50px;
+    display: flex;
+    text-align: center;
+}
+
+image {
+
+    display: block;
+    margin: 0 auto;
+    
+}
+
+ul {
+
+    text-align: left;
+}
+
+#exp-list {
+
+    font-size: 20px;
+}
+
+
+
+
+

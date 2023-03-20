@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact_me</title>
+
+    <link rel="stylesheet" href="../css/contact_me.css">
+    <link rel="shortcut icon" type="x-icon" href="..\assets\icon.png">
+    <script defer src="../js/contact_me.js"></script>
+</head>
+<body>
+    <a class = "container" href="../index.html"><img src = "..\assets\back_button.png"></a>
+    <div class = "container">
+        <h1>contact_me</h1>
+        <div class = "contact-box">
+        <div class = "contact-left">
+            <h4>Annoy me! :D</h4>
+            <table>
+                <tr>
+                    <td>Email</td>
+                    <td>jkwon9599@gmail.com
+                    <br>prod.typhoon@gmail.com for music inquries</td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td>+1 (661) 670-0533</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>25521 Wharton Drive
+                    <br>Stevenson Ranch, CA, 91381</td>
+                </tr>
+                
+            </table>
+        </div>
+        
+        <div class = "contact-right">
+            
+            <form>
+
+                <div class="input-row">
+                    <div class="input-group">  
+                        <label>Name</label>
+                        <input type="text" placeholder="i.e. Tony Stark">
+                    </div>
+                    <div class="input-group">  
+                        <label>Phone</label>
+                        <input onkeydown = "phoneNumberFormatter()" id="phone-number" type="tel" 
+                                placeholder="i.e. 1234567890" maxlength="16">
+                    </div>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-group">  
+                        <label>Email</label>
+                        <input type="email" placeholder="i.e. ironman@stark.com">
+                    </div>
+                </div>
+
+                <label>Message</label>
+                <textarea rows="5" placeholder="Say something mean"></textarea>
+
+                <button type = "submit">SEND</button>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
