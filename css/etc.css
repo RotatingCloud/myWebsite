@@ -1,0 +1,52 @@
+@import url('https://fonts.cdnfonts.com/css/cobbler');
+
+:root {
+
+    /*main page*/
+    --main-bg: #FFE7BB;
+    --main-text: #998C77;
+    /*div border*/
+    --main-border:  #96856c;
+    /*edu panel*/
+    --edu-panel: #FFEAC2;
+    --edu-text: #867966;
+    /*edu pane*/
+    --skills-panel: #B9A78D;
+    --skills-text: #746957;
+    /*exp panel*/
+    --exp-panel: #BAA27F;
+    --exp-text: #5E4A30;
+
+}
+
+body {
+
+    background-color: var(--main-bg);
+    color: var(--main-text);
+    font-family: 'Cobbler', sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+h1 {
+    
+    padding: 60px;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: -40px;
+    font-size: 100px;
+}
+
+.hidden {
+
+    opacity: 0;
+    filter: blur(3px);
+    transition: all 1s;
+}
+
+.show {
+
+    opacity: 1;
+    filter: blur(0);
+}

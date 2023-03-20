@@ -1,19 +1,33 @@
 @import url('https://fonts.cdnfonts.com/css/cobbler');
 
+html {
+
+    scroll-behavior: smooth;
+}
+
 :root {
 
-    --main-bg-color: #f1e7bb;
-    --title-color: #c4af8f;
-    --left-box-color: #B9945D;
-    --left-text-color: #e9cea5;
-    --right-box-color: #D3B07D;
-    --right-text-color: #a18152;
+    /*main page*/
+    --main-bg: #FFE7BB;
+    --main-text: #998C77;
+    /*div border*/
+    --main-border:  #96856c;
+    /*edu panel*/
+    --edu-panel: #FFEAC2;
+    --edu-text: #867966;
+    /*edu pane*/
+    --skills-panel: #B9A78D;
+    --skills-text: #746957;
+    /*exp panel*/
+    --exp-panel: #BAA27F;
+    --exp-text: #5E4A30;
+
 }
 
 body {
 
-    background-color: var(--main-bg-color);
-    color: var(--title-color);
+    background-color: var(--main-bg);
+    color: var(--main-text);
     font-family: 'Cobbler', sans-serif;
     padding: 0;
     margin: 0;
@@ -62,18 +76,18 @@ label {
     height: 600px;
     cursor: pointer;
     position: relative;
-    color: #e9cea5;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 10px solid #8b7a5f;
+    border: 10px solid var(--main-border);
     border-radius: 63px;
     transition: 0.5s;
-    background: var(--main-bg-color);
+    background: var(--edu-panel);
     box-shadow:  5px 5px 27px #a19b7d,
              -5px -5px 27px #fffff9;
 
     transform: scale(0.7);
+    overflow: hidden;
 }
 
 .container .panel:hover {
@@ -90,7 +104,7 @@ label {
     align-items: center;
     justify-content: center;
     height: 100%;
-    background-color: var(--main-bg-color);
+    background-color: var(--edu-panel);
     transition: 0.5s;
     border-radius: 63px;
     z-index: 1;
@@ -111,7 +125,7 @@ label {
     padding-top: 240px;
     margin: 40px;
     font-size: 25px;
-    color: var(--right-text-color);
+    color: var(--edu-text);
 }
 
 .container .pane {
@@ -119,10 +133,10 @@ label {
     width: 430px;
     height: 430px;
     cursor: pointer;
-    border: 10px solid #8b7a5f;
+    border: 10px solid var(--main-border);
     position: relative;
-    background-color: var(--title-color);
-    color: #e9cea5;
+    background-color: var(--skills-panel);
+    color: var(--skills-text);
     text-align: center;
     overflow: hidden;
     margin-bottom: 100px;
@@ -193,18 +207,28 @@ label {
 
 #exp-panel {
 
-    background: var(--left-text-color);
+    background: var(--exp-panel);
+    color: var(--exp-text);
     margin-bottom: 300px;
     width: 800px;
 }
 
 #exp-icon {
 
-    background-color: var(--left-text-color);
-    color: var(--title-color);
+    background-color: var(--exp-panel);
+    color: var(--exp-text);
     font-size: 50px;
     display: flex;
     text-align: center;
+}
+
+#exp-text {
+
+    text-align: center;
+    padding-top: 240px;
+    margin: 40px;
+    font-size: 25px;
+    color: var(--exp-text);
 }
 
 image {

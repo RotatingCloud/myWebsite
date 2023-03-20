@@ -1,0 +1,38 @@
+@import url('https://fonts.cdnfonts.com/css/cobbler');
+
+:root {
+
+    /*main page*/
+    --main-bg: #FFE7BB;
+    --main-text: #998C77;
+}
+
+.hidden {
+
+    opacity: 0;
+    filter: blur(3px);
+    transition: all 1.3s;
+}
+
+.show {
+
+    opacity: 1;
+    filter: blur(0);
+}
+
+h1 {
+    
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 100px;
+}
+
+body {
+
+    background-color: var(--main-text);
+    color: var(--main-bg);
+    font-family: 'Cobbler', sans-serif;
+    font-size: 35px;
+    padding: 0;
+    margin: 0;
+}

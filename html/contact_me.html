@@ -9,14 +9,31 @@
     <link rel="stylesheet" href="../css/contact_me.css">
     <link rel="shortcut icon" type="x-icon" href="..\assets\icon.png">
     <script defer src="../js/contact_me.js"></script>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("reBKvw6fcyzHjawI4");
+        })();
+    </script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"
+        integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css">
+    <script src="https://kit.fontawesome.com/d02c748d33.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <a class = "container" href="../index.html"><img src = "..\assets\back_button.png"></a>
-    <div class = "container">
-        <h1>contact_me</h1>
-        <div class = "contact-box">
+    
+    <a class = "hidden" href="../index.html"><img src = "..\assets\back_button.png"></a>
+
+    <h1 class = "hidden" >contact_me</h1>
+
+    <div class = "container hidden">
         <div class = "contact-left">
-            <h4>Annoy me! :D</h4>
+            <h2>Annoy me! :D</h4>
             <table>
                 <tr>
                     <td>Email</td>
@@ -25,28 +42,29 @@
                 </tr>
                 <tr>
                     <td>Phone</td>
-                    <td>+1 (661) 670-0533</td>
+                    <td url = >+1 (661) 670-0533</td>
                 </tr>
-                <tr>
-                    <td>Address</td>
-                    <td>25521 Wharton Drive
-                    <br>Stevenson Ranch, CA, 91381</td>
-                </tr>
+
                 
             </table>
+
+            <div class="icons">
+                <a href="https://www.instagram.com/typhoon.dll/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/jung-ho-kwon/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </div>
         </div>
-        
+
         <div class = "contact-right">
             
-            <form>
+            <form onsubmit="sendEmail(); return false;">
 
                 <div class="input-row">
                     <div class="input-group">  
                         <label>Name</label>
-                        <input type="text" placeholder="i.e. Tony Stark">
+                        <input type="text" id="name" placeholder="i.e. Tony Stark">
                     </div>
                     <div class="input-group">  
-                        <label>Phone</label>
+                        <label>Phone #</label>
                         <input onkeydown = "phoneNumberFormatter()" id="phone-number" type="tel" 
                                 placeholder="i.e. 1234567890" maxlength="16">
                     </div>
@@ -55,15 +73,18 @@
                 <div class="input-row">
                     <div class="input-group">  
                         <label>Email</label>
-                        <input type="email" placeholder="i.e. ironman@stark.com">
+                        <input type="email" id="email" placeholder="i.e. ironman@stark.com">
+                    </div>
+                    <div class="input-group">  
+                        <label>Subject</label>
+                        <input type="text" id="subject" placeholder="blah blah">
                     </div>
                 </div>
 
                 <label>Message</label>
-                <textarea rows="5" placeholder="Say something mean"></textarea>
+                <textarea id="message" rows="5" placeholder="say something mean"></textarea>
 
-                <button type = "submit">SEND</button>
-
+                <button type = "submit">S E N D</button>
             </form>
         </div>
     </div>

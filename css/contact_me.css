@@ -2,28 +2,26 @@
 
 :root {
 
-    --main-bg-color: #f1e7bb;
-    --title-color: #c4af8f;
-    --left-box-color: #B9945D;
-    --left-text-color: #e9cea5;
-    --right-box-color: #D3B07D;
-    --right-text-color: #a18152;
+    /*main page*/
+    --main-bg: #FFE7BB;
+    --main-text: #998C77;
+    /*left*/
+    --left-color: #B9945D;
+    /*right*/
+    --right-color: #D3B07D;
 }
 
 h1 {
     
+    padding: 60px;
     margin-top: 10px;
     margin-left: 30px;
+    margin-bottom: -40px;
     font-size: 100px;
 }
 
+
 h2 {
-
-    margin-left: 30px;
-    font-size: 50px;
-}
-
-h4 {
 
     margin-top: 10px;
     color: var(--left-text-color);
@@ -32,66 +30,54 @@ h4 {
 
 body {
 
-    background-color: var(--main-bg-color);
-    color: var(--title-color);
+    background-color: var(--main-bg);
+    color: var(--main-text);
     font-family: 'Cobbler', sans-serif;
     padding: 0;
     margin: 0;
-}
-
-p {
-
-    font-size: 20px;
-    margin-left: 40px;
-    margin-top: -50px;
-}
-
-li {
-     
-    font-size: 25px;
+    height: 100vh;
 }
 
 .container {
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 80%;
     margin: 50px auto;
     opacity: 0;
     filter: blur(3px);
     transition: all 1s;
-}
-
-.contact-box {
-
-    background: var(--left-box-color);
-    color: var(--left-text-color);
     display: flex;
-    box-shadow: 0px 5px 15px 0px rgba(80, 62, 22, 0.3);
+
+    border: 10px solid var(--main-border);
 }
 
 .contact-left {
 
-    flex-basis: 60%;
+    width: 800px;
+    height: 400px;
     padding: 40px 60px;
+    border-radius: 63px;
+    background-color: var(--left-color);
+    color: var(--right-color);
 }
 
 .contact-right {
 
-    flex-basis: 60%;
+    width: 800px;
+    height: 400px;
     padding: 40px 60px;
-    background-color: var(--right-box-color);
-    color: var(--right-box-color);
-}
+    border-radius: 63px;
+    background-color: var(--right-color);
+    color: var(--left-color);
 
-h1 {
-
-    margin-bottom: 10px;
-
+    margin-left: -400px;
 }
 
 .container p {
 
-    margin-bottom: 40px;
-    
+    margin-bottom: 40px;  
 }
 
 .input-row {
@@ -114,6 +100,8 @@ input {
     outline: none;
     padding-bottom: 5px;
     background-color: var(--right-box-color);
+    
+    color: var(--right-text-color);
 }
 
 textarea {
@@ -124,6 +112,8 @@ textarea {
     padding-bottom: 10px;
     background-color: var(--right-box-color);
     box-sizing: border-box;
+    
+    color: var(--right-text-color);
 }
 
 label {
@@ -161,7 +151,7 @@ tr td {
 
     opacity: 0;
     filter: blur(3px);
-    transition: all 1.4s;
+    transition: all 1s;
 }
 
 .show {
@@ -169,3 +159,10 @@ tr td {
     opacity: 1;
     filter: blur(0);
 }
+
+::placeholder {
+
+    color: white;
+    opacity: 40%;
+}
+
