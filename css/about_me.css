@@ -42,78 +42,108 @@ h1 {
     font-size: 100px;
 }
 
-.container {
-
-    background-color: var(--main-bg-color);
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    gap: 80px;
-    align-items: center;
-}
-
-.container .pane {
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 430px;
-    height: 430px;
-    cursor: pointer;
-    border: 10px solid #8b7a5f;
-    position: relative;
-    background-color: var(--title-color);
-    color: #e9cea5;
-    overflow: hidden;
-    margin-bottom: 100px;
-    transition: 0.5s;
-    border-radius: 50px;
-    box-shadow:  20px 20px 60px #a7957a,
-             -20px -20px 60px #e1c9a4;
-    transform: scale(0.7);
-}
-
-.container .pane:hover {
-    transform: scale(0.9);
-}
-
-.container .pane .title {
-
-    top: 0;
-    left: 0;
-    font-size: 70px;
-    background-color: var(--title-color);
-    width: 100%;
-    height: 100%;
-    transition: 0.5s;
-    border-radius: 63px;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container .pane:hover .title {
-
-    top: 20px;
-    right: clac(50% - 40px);
-    width: 80px/2;
-    height: 50%;
-}
-
-.container .pane .icon {
-
-    text-align: center;
-    margin-top: 0px;
-    font-size: 40px;
-    letter-spacing: 5px;
-}
-
 #portrait {
 
     transform: scale(0.2);
     margin-bottom: 90px;
     margin-left: 25px;
 }
+
+.container {
+
+    background-color: var(--main-bg-color);
+
+    display: flex;
+    justify-content: center;
+}
+
+.container .popout-hitbox {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+    margin-top: 60px;
+}
+
+.container .popout-hitbox .pane {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 430px;
+    height: 430px;
+    cursor: pointer;
+    border: 10px solid #8b7a5f;
+    background-color: var(--title-color);
+    color: #e9cea5;
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 50px;
+
+    position: absolute;
+}
+
+.container .popout-hitbox .popout {
+
+    border: 10px solid #8b7a5f;
+    background-color: var(--title-color);
+    border-radius: 50px;
+    color: #e9cea5;
+
+    z-index: -999;
+    width: 400px;
+    height: 390px;
+    cursor: pointer;
+    
+    overflow: hidden;
+    transition: 0.3s;
+    transform: scale(0.7);
+
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.container .popout-hitbox .popout .popout-text {
+
+    font-size: 30px;
+    text-align: left;
+    width: 400px;
+    word-wrap: break-word;
+    color: #5f5341;
+
+    margin-right: 40px;
+}
+
+.container .popout-hitbox:hover .pane {
+
+    transform: rotate(-4deg);
+    margin-left: -400px;
+}
+
+.container .popout-hitbox:hover .popout {
+
+    transform: translateX(200px);
+    margin-top: -30px;
+    width: 600px;
+
+    box-shadow: 20px 20px 60px #5f5341,
+        -20px -20px 60px #b7a17d;
+}
+
+#back {
+
+    transition: 0.3s;
+}
+
+#back:hover {
+
+    transform: scale(1.1);
+}
+
+
+
+
 

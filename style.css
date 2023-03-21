@@ -47,6 +47,7 @@ a {
     padding: 0 10px;
     transition: 0.24s;
     font-size: 50px;
+    font-weight: bold;
     margin-left: 30px;
     margin-bottom: 30px;
     display: i;
@@ -65,10 +66,10 @@ a {
     content: "";
     position: absolute;
     background-color: var(--main-bg);
-    height: 5px;
+    height: 8px;
     width: 0px;
     left: 10px;
-    bottom: -10px;
+    bottom: -13px;
     border-radius: 10px;
     transition: 0.3s;
 }
