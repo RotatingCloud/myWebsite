@@ -60,7 +60,7 @@ body {
     transform: scale(1.2);
 }
 
-.entry {
+#entry {
 
     width: 60%;
     height: 300px;
@@ -78,7 +78,9 @@ body {
     border: 10px solid #ada89d;
 
     overflow: hidden;
-    
+
+    text-decoration: none;
+    color: var(--main-bg);
 }
 
 .container {
@@ -95,7 +97,7 @@ h2 {
     margin: 0;
 }
 
-.entry:hover {
+#entry:hover {
 
     transform: scale(1.02);
     background-color: #a19073;

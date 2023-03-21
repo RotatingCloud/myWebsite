@@ -229,8 +229,7 @@ i:hover {
 
     border-radius: 63px;
 
-    box-shadow:  12px 12px 24px #cfbb97,
-             -12px -12px 24px #ffffdf;
+    
 
     transition: 0.3s;
 }
@@ -238,4 +237,6 @@ i:hover {
 .border:hover {
 
     transform: scale(1.02);
+    box-shadow:  12px 12px 24px #82755d,
+             -12px -12px 24px #c0ab89;
 }
