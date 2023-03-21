@@ -76,6 +76,8 @@ body {
 
     background-color: #a19073;
     border: 10px solid #ada89d;
+
+    overflow: hidden;
     
 }
 
