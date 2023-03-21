@@ -64,7 +64,9 @@ body {
     color: var(--right-color);
     
     position: absolute;
-    margin-left: -300px;
+    margin-left: -380px;
+
+    justify-content: flex-start;
 }
 
 .contact-right {
@@ -77,8 +79,10 @@ body {
     background-color: var(--right-color);
     color: var(--left-color);
 
-    margin-right: -550px;
+    margin-right: -583px;
     position: relative;
+
+    justify-content: flex-end;
 }
 
 .container p {
@@ -214,4 +218,24 @@ i:hover {
 #back:hover {
 
     transform: scale(1.1);
+}
+
+.border {
+
+    width: 86%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 63px;
+
+    box-shadow:  12px 12px 24px #cfbb97,
+             -12px -12px 24px #ffffdf;
+
+    transition: 0.3s;
+}
+
+.border:hover {
+
+    transform: scale(1.02);
 }
