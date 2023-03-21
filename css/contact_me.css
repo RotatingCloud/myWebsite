@@ -6,9 +6,9 @@
     --main-bg: #FFE7BB;
     --main-text: #998C77;
     /*left*/
-    --left-color: #B9945D;
+    --left-color: #8f7957;
     /*right*/
-    --right-color: #D3B07D;
+    --right-color: #e9cca1;
 }
 
 h1 {
@@ -25,7 +25,7 @@ h2 {
 
     margin-top: 10px;
     color: var(--left-text-color);
-    font-size: 30px;
+    font-size: 50px;
 }
 
 body {
@@ -50,7 +50,7 @@ body {
     transition: all 1s;
     display: flex;
 
-    border: 10px solid var(--main-border);
+    padding-bottom: 50px;
 }
 
 .contact-left {
@@ -59,6 +59,7 @@ body {
     height: 400px;
     padding: 40px 60px;
     border-radius: 63px;
+    border: 10px solid #726247;
     background-color: var(--left-color);
     color: var(--right-color);
 }
@@ -69,6 +70,7 @@ body {
     height: 400px;
     padding: 40px 60px;
     border-radius: 63px;
+    border: 10px solid #726247;
     background-color: var(--right-color);
     color: var(--left-color);
 
@@ -107,10 +109,11 @@ input {
 textarea {
 
     width: 100%;
-    border: 1px solid var(--left-box-color);
+    height: 100px;
+    border: 1px solid var(--left-color);
     outline: none;
     padding-bottom: 10px;
-    background-color: var(--right-box-color);
+    background-color: var(--right-color);
     box-sizing: border-box;
     
     color: var(--right-text-color);
@@ -162,7 +165,20 @@ tr td {
 
 ::placeholder {
 
-    color: white;
-    opacity: 40%;
+    color: var(--left-color);
+    opacity: 60%;
 }
 
+.icons {
+
+    font-size: 50px;
+    margin-top: 30px;
+    display: flex;
+    gap: 50px;
+    color: var(--right-color);
+}
+
+i {
+
+    color: var(--right-color);
+}
