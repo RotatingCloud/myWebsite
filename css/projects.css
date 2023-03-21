@@ -82,7 +82,7 @@ body {
     overflow: hidden;
 
     text-decoration: none;
-    color: var(--main-bg);
+    color: #ada89d;
 }
 
 .container {
@@ -104,6 +104,8 @@ h2 {
     transform: scale(1.02);
     background-color: #a19073;
     border: 10px solid #FFE7BB;
+
+    color: var(--main-bg);
     
     box-shadow:  12px 12px 24px #82755d,
              -12px -12px 24px #c0ab89;
