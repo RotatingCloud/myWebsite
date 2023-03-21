@@ -57,7 +57,9 @@ body {
 
 #github:hover {
 
-    transform: scale(1.2);
+    transform: scale(1.2) rotate(5deg);
+    text-shadow: 9px 9px 18px #766c5c,
+    -9px -9px 18px #bcac92;
 }
 
 #entry {

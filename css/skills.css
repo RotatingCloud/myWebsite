@@ -83,8 +83,6 @@ label {
     border-radius: 63px;
     transition: 0.5s;
     background: var(--edu-panel);
-    box-shadow:  5px 5px 27px #a19b7d,
-             -5px -5px 27px #fffff9;
 
     transform: scale(0.7);
     overflow: hidden;
@@ -92,6 +90,9 @@ label {
 
 .container .panel:hover {
     transform: scale(0.8);
+    
+    box-shadow:  5px 5px 27px #a19b7d,
+             -5px -5px 27px #fffff9;
 }
 
 .container .panel .icon {
@@ -142,13 +143,14 @@ label {
     margin-bottom: 100px;
     transition: 0.5s;
     border-radius: 50px;
-    box-shadow:  20px 20px 60px #a7957a,
-             -20px -20px 60px #e1c9a4;
     transform: scale(0.7);
 }
 
 .container .pane:hover {
     transform: scale(0.9);
+    
+    box-shadow:  20px 20px 60px #a7957a,
+             -20px -20px 60px #e1c9a4;
 }
 
 .container .pane .title {
