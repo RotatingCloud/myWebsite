@@ -11,6 +11,9 @@ body {
 
     background-color: var(--main-text);
     font-family: 'Cobbler', sans-serif;
+    margin: 0;
+
+    display: flex;
 }
 
 
@@ -39,6 +42,7 @@ a {
 .container {
 
     display: inline-block;
+    width: 68%;
 }
 
 .item {
@@ -87,5 +91,36 @@ a {
     padding-right: 20px;
 }
 
+
+#box {
+
+    width: 500px;
+    height: 500px;
+    border-radius: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right {
+
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page {
+
+    display: flex;
+    width: 100%;
+}
+
+canvas {
+
+    height: 100%;
+}
 
 
