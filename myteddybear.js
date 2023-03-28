@@ -14,7 +14,7 @@ function init() {
     var container = document.getElementById('box');
 
     //create camera
-    camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 0.01, 1000);
+    camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 0.01, 1000);
     //set pos
     camera.position.set(2, -2, 5);
     camera.position.z -= 10;
@@ -39,7 +39,7 @@ function init() {
 
     //vox loader
     const loader = new VOXLoader();
-    loader.load( '../myWebsite/assets/myteddybear.vox', function ( chunks ) {
+    loader.load( '../assets/myteddybear.vox', function ( chunks ) {
 
         for ( let i = 0; i < chunks.length; i ++ ) {
 
@@ -77,8 +77,7 @@ function init() {
     controls.minPolarAngle = Math.PI / 2.4;
     controls.enablePan = false;
     controls.enableDamping = true;
-    controls.zoomSpeed = 6;
-    controls.zoomEnable = false;
+    controls.enableZoom = false;
 
     window.addEventListener( 'resize', onWindowResize );
 }
