@@ -33,37 +33,34 @@ body {
 a {
 
     text-decoration: none;
-    color: #aaa191;
-    margin-top: -10px;
-    margin-left: 20px;
+    color: #FFE7BB;
     transition: 0.3s;
+
+    padding: 20px;
+
+    text-align: center;
 }
 
 .container {
 
-    display: inline-block;
-    width: 68%;
+    display: flex;
+
+    width: 100%;
 }
 
 .item {
 
     position: relative;
     letter-spacing: 6px;
-    padding: 5px;
-    padding-bottom: 10px;
-    padding-top: 5px;
     transition: 0.24s;
-    font-size: 50px;
+    font-size: 20px;
     font-weight: bold;
-    margin: 30px;
+    margin: 20px;
     transform-origin: left top;
-
     display: flex;
     align-items: flex-end;
-
-    border: 10px solid #9B886A;
-
     border-radius: 20px;
+    width: fit-content;
 }
 
 .item:hover {
@@ -74,23 +71,7 @@ a {
     background: #9B886A;
     box-shadow:  9px 9px 18px #85755b,
              -9px -9px 18px #b19b79;
-
-    border: 10px solid #FFE7BB;
 }
-
-.item:hover a {
-
-    color: #FFE7BB;
-}
-
-.heading {
-
-    font-size: 100px;
-
-    padding-bottom: 10px;
-    padding-right: 20px;
-}
-
 
 #box {
 
@@ -116,6 +97,7 @@ a {
 
     display: flex;
     width: 100%;
+    flex-direction: column;
 }
 
 canvas {
@@ -123,4 +105,41 @@ canvas {
     height: 100%;
 }
 
+#hi {
+
+    color: #FFE7BB;
+    font-size: 100px;
+
+    margin: 30px;
+    padding-left: 300px;
+}
+
+#hello {
+
+    color: #FFE7BB;
+    font-size: 30px;
+    margin: 30px;
+
+    text-align: center;
+}
+
+.text  {
+
+    color: #FFE7BB;
+    margin: 30px;
+}
+
+.nonitem {
+
+    position: relative;
+    letter-spacing: 6px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 20px;
+    width: fit-content;
+    color: #FFE7BB;
+}
 

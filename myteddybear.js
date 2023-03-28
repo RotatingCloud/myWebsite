@@ -17,7 +17,7 @@ function init() {
     camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 0.01, 1000);
     //set pos
     camera.position.set(2, -2, 5);
-    camera.position.z -= 5;
+    camera.position.z -= 10;
 
     camera.updateProjectionMatrix();
 
@@ -39,7 +39,7 @@ function init() {
 
     //vox loader
     const loader = new VOXLoader();
-    loader.load( '../myWebsite/assets/myteddybear.vox', function ( chunks ) {
+    loader.load( '../assets/myteddybear.vox', function ( chunks ) {
 
         for ( let i = 0; i < chunks.length; i ++ ) {
 
@@ -51,8 +51,8 @@ function init() {
 
         }
 
-        const bbox = new THREE.Box3().setFromObject(mesh);
-        const center = bbox.getCenter(new THREE.Vector3());
+        const box = new THREE.Box3().setFromObject(mesh);
+        const center = box.getCenter(new THREE.Vector3());
 
         
         camera.lookAt(center);
@@ -70,16 +70,15 @@ function init() {
     // controls
 
     controls = new OrbitControls( camera, renderer.domElement );
-    controls.maxDistance = 0.12;
+    controls.maxDistance = 0.13;
     controls.autoRotate = true;
-    controls.autoRotateSpeed = 1.3;
+    controls.autoRotateSpeed = 1;
     controls.maxPolarAngle = Math.PI / 2.4;
     controls.minPolarAngle = Math.PI / 2.4;
     controls.enablePan = false;
     controls.enableDamping = true;
     controls.zoomSpeed = 6;
     controls.zoomEnable = false;
-    //
 
     window.addEventListener( 'resize', onWindowResize );
 }

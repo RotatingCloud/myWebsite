@@ -77,12 +77,14 @@ body {
     transition: 0.3s;
 
     background-color: #a19073;
-    border: 10px solid #ada89d;
+    border: 10px solid #c7b692;
 
     overflow: hidden;
 
+    margin-bottom: 20px;
+
     text-decoration: none;
-    color: #ada89d;
+    color: #c7b692;
 }
 
 .container {
@@ -91,7 +93,11 @@ body {
     align-items: center;
     justify-content: center;
 
+    flex-direction: column;
+
     height: 100%;
+
+    width: 100%;
 }
 
 h2 {
