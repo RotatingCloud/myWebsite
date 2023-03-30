@@ -11,6 +11,12 @@
     --right-color: #e9cca1;
 }
 
+::-webkit-scrollbar {
+
+    display: none;
+    
+}
+
 h1 {
     
     padding: 60px;
@@ -38,7 +44,7 @@ body {
     height: 100vh;
 }
 
-.container {
+.page {
 
     display: flex;
     align-items: center;

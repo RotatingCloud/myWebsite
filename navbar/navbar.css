@@ -1,0 +1,58 @@
+:root {
+
+    --main-bg: #9B886A;
+    --main-text: #FFE7BB;
+}
+
+.navbar {
+    
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--main-bg); /* You can change this to any color you prefer */
+}
+
+a {
+
+    text-decoration: none;
+    color: var(--main-text);
+    transition: 0.3s;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+.container {
+
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.item {
+
+    position: relative;
+    letter-spacing: 6px;
+    transition: 0.24s;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+    transform-origin: left top;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 20px;
+    width: fit-content;
+}
+
+.item:hover {
+
+    color: --main-text;
+    transform: scale(1.05);
+    transform-origin: left;
+    border-radius: 50px;
+    background: #9B886A;
+    box-shadow:  8px 8px 28px #746650,
+             -8px -8px 28px #c2aa85;
+}

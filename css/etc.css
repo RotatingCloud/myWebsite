@@ -3,8 +3,8 @@
 :root {
 
     /*main page*/
-    --main-bg: #FFE7BB;
-    --main-text: #998C77;
+    --main-bg: #998C77;
+    --main-text: #FFE7BB;
     /*div border*/
     --main-border:  #96856c;
     /*edu panel*/
@@ -17,6 +17,12 @@
     --exp-panel: #BAA27F;
     --exp-text: #5E4A30;
 
+}
+
+::-webkit-scrollbar {
+
+    display: none;
+    
 }
 
 body {

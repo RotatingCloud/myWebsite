@@ -3,8 +3,7 @@
 :root {
 
     /*main page*/
-    --main-bg: #FFE7BB;
-    --main-text: #9b886a;
+    --main-bg: #9b886a;
 }
 
 ::-webkit-scrollbar {
@@ -15,11 +14,13 @@
 
 body {
 
-    background-color: var(--main-text);
+    background-color: var(--main-bg);
     font-family: 'Cobbler', sans-serif;
     margin: 0;
 
-    display: flex;
+    display: block;
+
+    overflow: hidden;
 }
 
 
@@ -36,118 +37,39 @@ body {
     filter: blur(0);
 }
 
-a {
-
-    text-decoration: none;
-    color: #FFE7BB;
-    transition: 0.3s;
-
-    padding: 20px;
-
-    text-align: center;
-}
-
-.container {
-
-    display: flex;
-
-    width: 100%;
-
-    padding-bottom: 30px;
-}
-
-.item {
-
-    position: relative;
-    letter-spacing: 6px;
-    transition: 0.24s;
-    font-size: 20px;
-    font-weight: bold;
-    margin: 20px;
-    transform-origin: left top;
-    display: flex;
-    align-items: flex-end;
-    border-radius: 20px;
-    width: fit-content;
-}
-
-.item:hover {
-
-    color: #fdfbe4;
-    transform: scale(1.05);
-    transform-origin: left;
-    background: #9B886A;
-    box-shadow:  9px 9px 18px #85755b,
-             -9px -9px 18px #b19b79;
-}
-
 #box {
 
-   
-    border-radius: 63px;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    height: 75%;
 }
 
-.right {
+.vox {
 
     width: 100%;
-    height: auto;
+    height: 100vh; /* Make the div occupy the full height of the viewport */
+    box-sizing: border-box; /* Include padding and border within the div's total dimensions */
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    margin-top: -80px;
+    
 }
 
 .page {
 
     display: flex;
     width: 100%;
+    height: fit-content;
     flex-direction: column;
+    padding-bottom: 40px;
 }
 
 canvas {
 
     height: 100%;
 }
-
-#hi {
-
-    color: #FFE7BB;
-    font-size: 100px;
-
-    margin: 30px;
-
-    text-align: center;
-}
-
-#hello {
-
-    color: #FFE7BB;
-    font-size: 30px;
-    margin: 30px;
-
-    text-align: center;
-}
-
-.text  {
-
-    color: #FFE7BB;
-    margin: 30px;
-}
-
-.nonitem {
-
-    position: relative;
-    letter-spacing: 6px;
-    font-size: 20px;
-    font-weight: bold;
-    margin: 20px;
-    display: flex;
-    align-items: flex-end;
-    border-radius: 20px;
-    width: fit-content;
-    color: #FFE7BB;
-}
-

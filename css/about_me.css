@@ -2,18 +2,23 @@
 
 :root {
 
-    --main-bg-color: #f1e7bb;
-    --title-color: #c4af8f;
+    --main-bg-color: #9B886A;
+    --title-color: #FFE7BB;
     --left-box-color: #B9945D;
     --left-text-color: #e9cea5;
     --right-box-color: #D3B07D;
     --right-text-color: #a18152;
 }
 
+::-webkit-scrollbar {
+
+    display: none;
+    
+}
+
 body {
 
     background-color: var(--main-bg-color);
-    color: var(--title-color);
     font-family: 'Cobbler', sans-serif;
     padding: 0;
     margin: 0;
@@ -40,6 +45,8 @@ h1 {
     margin-left: 30px;
     margin-bottom: -40px;
     font-size: 100px;
+
+    color: var(--title-color);
 }
 
 #portrait {
@@ -49,7 +56,7 @@ h1 {
     margin-left: 25px;
 }
 
-.container {
+.about {
 
     background-color: var(--main-bg-color);
 
@@ -57,7 +64,7 @@ h1 {
     justify-content: center;
 }
 
-.container .popout-hitbox {
+.about .popout-hitbox {
 
     display: flex;
     align-items: center;
@@ -66,7 +73,7 @@ h1 {
     margin-top: 60px;
 }
 
-.container .popout-hitbox .pane {
+.about .popout-hitbox .pane {
 
     display: flex;
     align-items: center;
@@ -84,7 +91,7 @@ h1 {
     position: absolute;
 }
 
-.container .popout-hitbox .popout {
+.about .popout-hitbox .popout {
 
     border: 10px solid #8b7a5f;
     background-color: var(--title-color);
@@ -106,7 +113,7 @@ h1 {
     align-items: center;
 }
 
-.container .popout-hitbox .popout .popout-text {
+.about .popout-hitbox .popout .popout-text {
 
     font-size: 30px;
     text-align: left;
@@ -117,20 +124,20 @@ h1 {
     margin-right: 40px;
 }
 
-.container .popout-hitbox:hover .pane {
+.about .popout-hitbox:hover .pane {
 
     transform: rotate(-4deg);
     margin-left: -400px;
 }
 
-.container .popout-hitbox:hover .popout {
+.about .popout-hitbox:hover .popout {
 
     transform: translateX(200px);
     margin-top: -30px;
     width: 600px;
 
-    box-shadow:  12px 12px 24px #c3bb97,
-             -12px -12px 24px #ffffdf;
+    box-shadow:  8px 8px 28px #746650,
+             -8px -8px 28px #c2aa85;
 }
 
 #back {
@@ -142,8 +149,3 @@ h1 {
 
     transform: scale(1.1);
 }
-
-
-
-
-

@@ -13,3 +13,14 @@ const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
 document.getElementById('body').style.color = '#ffffff';
+
+
+async function loadNavbar() {
+
+    const response = await fetch("../navbar.html");
+    const navbarHtml = await response.text();
+    document.getElementById("navbar").innerHTML = navbarHtml;
+
+}
+
+loadNavbar();
