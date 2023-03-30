@@ -39,7 +39,7 @@ function init() {
 
     //vox loader
     const loader = new VOXLoader();
-    loader.load( '../assets/myteddybear.vox', function ( chunks ) {
+    loader.load( "../myWebsite/assets/myteddybear.vox", function ( chunks ) {
 
         for ( let i = 0; i < chunks.length; i ++ ) {
 
