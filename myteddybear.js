@@ -15,9 +15,9 @@ function init() {
 
     //create camera
     camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 0.01, 1000);
+    
     //set pos
-    camera.position.set(2, -2, 5);
-    camera.position.z -= 10;
+    camera.position.set(2, -2, 100);
 
     camera.updateProjectionMatrix();
 
