@@ -49,103 +49,37 @@ h1 {
     color: var(--title-color);
 }
 
-#portrait {
-
-    transform: scale(0.2);
-    margin-bottom: 90px;
-    margin-left: 25px;
-}
-
 .about {
 
-    background-color: var(--main-bg-color);
-
     display: flex;
     justify-content: center;
-}
-
-.about .popout-hitbox {
-
-    display: flex;
     align-items: center;
-    justify-content: center;
-    transition: 0.4s;
-    margin-top: 60px;
 }
 
-.about .popout-hitbox .pane {
+.portrait {
 
-    display: flex;
-    align-items: center;
+    scale: 0.6;
     justify-content: center;
-    width: 430px;
-    height: 430px;
-    cursor: pointer;
-    border: 10px solid #8b7a5f;
-    background-color: var(--title-color);
-    color: #e9cea5;
-    overflow: hidden;
-    transition: 0.5s;
-    border-radius: 50px;
-
-    position: absolute;
-}
-
-.about .popout-hitbox .popout {
-
-    border: 10px solid #8b7a5f;
-    background-color: var(--title-color);
-    border-radius: 50px;
-    color: #e9cea5;
-
-    z-index: -999;
-    width: 400px;
-    height: 390px;
-    cursor: pointer;
+    border-radius: 0px;
+    background: #9B886A;
+    box-shadow:  41px 41px 82px #85755b,
+                -41px -41px 82px #b19b79;
     
-    overflow: hidden;
-    transition: 0.3s;
-    transform: scale(0.7);
-
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
 }
 
-.about .popout-hitbox .popout .popout-text {
+.description {
+
+    max-width: 25%;
+}
+
+.description-text {
 
     font-size: 30px;
-    text-align: left;
-    width: 400px;
-    word-wrap: break-word;
-    color: #5f5341;
-
-    margin-right: 40px;
+    color: var(--left-text-color);
+    margin: 30px;
 }
 
-.about .popout-hitbox:hover .pane {
+img {
 
-    transform: rotate(-4deg);
-    margin-left: -400px;
-}
-
-.about .popout-hitbox:hover .popout {
-
-    transform: translateX(200px);
-    margin-top: -30px;
-    width: 600px;
-
-    box-shadow:  8px 8px 28px #746650,
-             -8px -8px 28px #c2aa85;
-}
-
-#back {
-
-    transition: 0.3s;
-}
-
-#back:hover {
-
-    transform: scale(1.1);
+    scale: 1.1;
 }

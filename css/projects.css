@@ -31,6 +31,7 @@ h1 {
     margin-top: 10px;
     margin-left: 100px;
     font-size: 100px;
+    margin-bottom: 0px;
 }
 
 body {
@@ -93,11 +94,6 @@ body {
     color: #c7b692;
 }
 
-h2 {
-
-    margin: 0;
-}
-
 #entry:hover {
 
     transform: scale(1.02);
@@ -117,4 +113,17 @@ h2 {
     align-items: center;
     width: 100%;
     min-height: 100vh; /* Make the page occupy the full height of the viewport */
+}
+
+h2 {
+
+    margin: 0;
+}
+
+h3 {
+
+    font-size: 20px;
+    margin-left: 100px;
+    margin-bottom: 70px;
+    font-weight: 100;
 }
