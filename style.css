@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/cobbler');
+@import url('https://fonts.cdnfonts.com/css/lt-bump');
 
 :root {
 
@@ -15,7 +15,8 @@
 body {
 
     background-color: var(--main-bg);
-    font-family: 'Cobbler', sans-serif;
+    font-family: 'LT Bump', sans-serif;
+
     margin: 0;
 
     display: block;
