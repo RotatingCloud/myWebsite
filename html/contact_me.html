@@ -10,15 +10,6 @@
     <link rel="shortcut icon" type="x-icon" href="..\assets\icon.png">
     <script defer src="../js/contact_me.js"></script>
 
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init("reBKvw6fcyzHjawI4");
-        })();
-    </script>
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"
         integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css">
@@ -29,66 +20,26 @@
 </head>
 <body>
     
-    <h1 class = "hidden" >contact me</h1>
+    <h1 class = "hidden" >contact</h1>
 
     <div class = "page hidden">
         <div class="border">
             <div class = "contact-left">
                 <div id = "left-text">
-                    <h2>Reach out! :D</h4>
                         <table>
                             <tr>
                                 <td>Email</td>
-                                <td>jkwon9599@gmail.com
-                                <br>prod.typhoon@gmail.com for music inquries</td>
+                                <td>sk.johnkwon@gmai.com</td>
                             </tr>
                             <tr>
                                 <td>Phone</td>
-                                <td url = >+1 (661) 670-0533</td>
+                                <td url = >+1 (661) 625-2633</td>
                             </tr>
-            
-                            
                         </table>
-            
                         <div class="icons">
-                            <a href="https://www.instagram.com/typhoon.dll/" target = "_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                             <a href="https://www.linkedin.com/in/jung-ho-kwon/" target = "_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                         </div>
                 </div>
-            </div>
-    
-            <div class = "contact-right">
-                
-                <form onsubmit="sendEmail(); return false;">
-    
-                    <div class="input-row">
-                        <div class="input-group">  
-                            <label>Name</label>
-                            <input type="text" id="name" placeholder="i.e. Tony Stark">
-                        </div>
-                        <div class="input-group">  
-                            <label>Phone #</label>
-                            <input onkeydown = "phoneNumberFormatter()" id="phone-number" type="tel" 
-                                    placeholder="i.e. 1234567890" maxlength="16">
-                        </div>
-                    </div>
-    
-                    <div class="input-row">
-                        <div class="input-group">  
-                            <label>Email</label>
-                            <input type="email" id="email" placeholder="i.e. ironman@stark.com">
-                        </div>
-                        <div class="input-group">  
-                            <label>Subject</label>
-                            <input type="text" id="subject" placeholder="blah blah">
-                        </div>
-                    </div>
-    
-                    <label>Message</label>
-                    <textarea id="message" rows="5" placeholder="say something mean...or nice"></textarea>
-    
-                    <button type = "submit">S E N D</button>
-                </form>
             </div>
         </div>
     </div>
